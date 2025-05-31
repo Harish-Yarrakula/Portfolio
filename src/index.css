@@ -1,0 +1,285 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+textarea:focus{
+  filter: drop-shadow(0 0 0.5em #eeeeefaa);
+}
+input:focus{
+  filter: drop-shadow(0 0 0.5em #e6e7efaa);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+
+.animate-on-scroll {
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.in-view {
+opacity: 1;
+transform: translateY(0);
+}
+
+.delay-100 {
+transition-delay: 100ms;
+}
+.delay-200 {
+transition-delay: 200ms;
+}
+.delay-300 {
+transition-delay: 300ms;
+}
+.delay-400 {
+transition-delay: 400ms;
+}
+.delay-500 {
+transition-delay: 500ms;
+}
+
+.glass-card-hover {
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition:  box-shadow 0.3s ease;
+  color: #f9f9f9;
+}
+.glass-card-hover1 {
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition:  box-shadow 0.3s ease;
+  color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.cards:hover{
+  scale: 1.1;
+  transition: all 0.3s;
+  /*filter: drop-shadow(0 0 2em #646cffaa);*/
+  box-shadow: 0 0 2em #646cffaa;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.h-full {
+  height: 100%;
+}
+
+/* Styling for the icon container */
+.bg-gradient-to-br {
+  background: linear-gradient(to bottom right, #56CCF2, #BB6BD9); /* Blue to purple gradient */
+}
+
+.w-12 {
+  width: 3rem;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+/* Icon styling */
+.text-white {
+  color: #FFFFFF;
+}
+
+/* Title styling */
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
+}
+
+/* Description styling */
+.text-white\/70 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+/* Skill tags */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+}
+
+.bg-white\/10 {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.text-white\/90 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Scroll Animations */
+.animate-on-load {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animation-delay-200 {
+  transition-delay: 200ms;
+}
+
+.animation-delay-400 {
+  transition-delay: 400ms;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale in animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
