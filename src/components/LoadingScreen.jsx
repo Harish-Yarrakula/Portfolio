@@ -5,7 +5,7 @@ import gsap from "gsap";
       setTimeout(()=>{
           document.querySelector(".overlay").style.display = "none";
           document.querySelector(".counter").style.display = "none";
-     }
+     });
 
 
 const LoadingScreen = () => {
