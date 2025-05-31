@@ -6,7 +6,7 @@ import gsap from "gsap";
           document.querySelector(".overlay").style.display = "none";
           document.querySelector(".counter").style.display = "none";
      });
-
+     }
 
 const LoadingScreen = () => {
   useEffect(() => {
